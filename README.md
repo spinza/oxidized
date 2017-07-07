@@ -70,6 +70,8 @@ Oxidized is a network device configuration backup tool. It's a RANCID replacemen
    * [C4CMTS](lib/oxidized/model/c4cmts.rb)
  * Aruba
    * [AOSW](lib/oxidized/model/aosw.rb)
+ * AudioCodes
+   * [AudioCodes](lib/oxdized/model/audiocodes.rb)
  * Avaya
    * [VOSS (VSP Operating System Software)](lib/oxidized/model/voss.rb)
    * [BOSS (Baystack Operating System Software)](lib/oxidized/model/boss.rb)
@@ -88,11 +90,13 @@ Oxidized is a network device configuration backup tool. It's a RANCID replacemen
  * Cisco
    * [AireOS](lib/oxidized/model/aireos.rb)
    * [ASA](lib/oxidized/model/asa.rb)
+   * [AsyncOS](lib/oxidized/model/asyncos.rb)
    * [CatOS](lib/oxidized/model/catos.rb)
    * [IOS](lib/oxidized/model/ios.rb)
    * [IOSXR](lib/oxidized/model/iosxr.rb)
    * [NGA](lib/oxidized/model/cisconga.rb)
    * [NXOS](lib/oxidized/model/nxos.rb)
+   * [SMA](lib/oxidized/model/ciscosma.rb)
    * [SMB (Nikola series)](lib/oxidized/model/ciscosmb.rb)
  * Citrix
    * [NetScaler (Virtual Applicance)](lib/oxidized/model/netscaler.rb)
@@ -103,6 +107,8 @@ Oxidized is a network device configuration backup tool. It's a RANCID replacemen
    * [Linux](lib/oxidized/model/cumulus.rb)
  * DataCom
    * [DmSwitch 3000](lib/oxidized/model/datacom.rb)
+ * DCN
+   * [DCN](lib/oxidized/model/ios.rb) - Map this to ios.
  * DELL
    * [PowerConnect](lib/oxidized/model/powerconnect.rb)
    * [AOSW](lib/oxidized/model/aosw.rb)
@@ -1041,7 +1047,7 @@ chown oxidized:oxidized /var/run/oxidized
 3.)Make oxidized start on boot
 
 ```
-update-rc.d oxidized deafults
+update-rc.d oxidized defaults
 ```
 
 Note the channel name must be in quotes.
