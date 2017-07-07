@@ -10,9 +10,9 @@ class RouterOS < Oxidized::Model
     comment cfg
   end
 
-  cmd '/system history print' do |cfg|
-    comment cfg
-  end
+  #cmd '/system history print' do |cfg|
+  #  comment cfg
+  #end
 
   post do
     run_cmd = vars(:remove_secret) ? '/export hide-sensitive' : '/export'
